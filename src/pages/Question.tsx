@@ -3,8 +3,8 @@ import userImg from "../../public/user.png";
 
 export default function Question({ question }: { question: Question | null }) {
   return (
-    <div className="flex w-[1318px] max-w-[1318px] gap-4 rounded-lg bg-white pr-12">
-      <div className="flex-[2_2_0%] border-r border-gray-200 py-12">
+    <div className="flex w-full max-w-[1318px] flex-col gap-4 rounded-lg bg-white lg:flex-row lg:pr-12">
+      <div className="flex-[2_2_0%] py-12 lg:border-r lg:border-gray-200">
         <div className="flex items-center gap-4 pl-12">
           <button className="flex h-10 w-10 items-center justify-center rounded-lg bg-neutral-200">
             <LeftArrow />
@@ -20,7 +20,7 @@ export default function Question({ question }: { question: Question | null }) {
             inputPlaceholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, amet? Tempore soluta ipsam veniam quidem, quasi odit minus maxime porro, itaque nesciunt nam explicabo esse sunt, accusantium assumenda? Dicta, architecto."
           />
         </div>
-        <div className="mt-8 flex justify-between border-t border-gray-200 pl-12 pr-5 pt-6">
+        <div className="mt-8 flex justify-between border-gray-200 pl-12 pr-5 pt-6 lg:border-t">
           <button className="flex h-10 h-11 items-center justify-center rounded-lg bg-neutral-200 px-8 text-sm">
             Back
           </button>
@@ -29,7 +29,7 @@ export default function Question({ question }: { question: Question | null }) {
           </button>
         </div>
       </div>
-      <div className="flex flex-1 items-center justify-center">
+      <div className="flex flex-1 items-center justify-center pb-8 lg:pb-0">
         <User
           user={{
             img: userImg,
